@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екологічні проблеми планети - Головна</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        html, body {
+            height: 100%;
+        }
+        
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .header, .footer {
+            background-color: #2E8B57;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+        }
+        
+        .header-content, .footer-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .logo:hover {
+            text-decoration: underline;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #3CB371;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn:hover {
+            background-color: #228B22;
+            transform: translateY(-2px);
+        }
+        
+        .main-content {
+            flex: 1;
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            padding-bottom: 30px;
+        }
+        
+        .page-header {
+            font-size: 32px;
+            color: #2E8B57;
+            text-align: center;
+            margin-bottom: 30px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .welcome-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .welcome-title {
+            font-size: 36px;
+            color: #2E8B57;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+        
+        .welcome-text {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .content-btn {
+            padding: 15px 25px;
+            background-color: #3CB371;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            text-align: center;
+            flex: 1 1 200px;
+        }
+        
+        .content-btn:hover {
+            background-color: #228B22;
+            transform: translateY(-2px);
+        }
+        
+        .footer-text {
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content, .footer-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .page-header {
+                font-size: 26px;
+            }
+            
+            .welcome-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">ECO-PLANET</a>
+            <div class="nav">
+                <a href="index.html" class="nav-btn">Головна</a>
+                <a href="problems.html" class="nav-btn">Проблеми</a>
+                <a href="solutions.html" class="nav-btn">Вирішення</a>
+                <a href="contacts.html" class="nav-btn">Контакти</a>
+            </div>
+            <header class="header">
+    <div class="header-content">
+        <a href="index.html" class="logo">
+            <img src="images/eco-logo.png" alt="Екологічні проблеми планети" class="logo-img">
+        </a>
+        <div class="nav">
+            <!-- ваше меню -->
+        </div>
+    </div>
+</header>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <h1 class="page-header">Екологічні проблеми сучасності</h1>
+        
+        <div class="welcome-box">
+            <h2 class="welcome-title">ЛАСКАВО ПРОСИМО</h2>
+            <p class="welcome-text">Цей сайт присвячено основним екологічним проблемам нашої планети. Тут ви знайдете інформацію про найбільш серйозні загрози для навколишнього середовища, способи їх вирішення та можливості внести свій внесок у збереження природи. Разом ми можемо зробити нашу планету чистішою та здоровішою для майбутніх поколінь.</p>
+            
+            <div class="btn-container">
+                <a href="problems.html" class="content-btn">Проблеми</a>
+                <a href="solutions.html" class="content-btn">Вирішення</a>
+                <a href="contacts.html" class="content-btn">Контакти</a>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Екологічні проблеми планети.</p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const welcomeBox = document.querySelector('.welcome-box');
+            welcomeBox.style.opacity = '0';
+            welcomeBox.style.transform = 'translateY(20px)';
+            
+            setTimeout(() => {
+                welcomeBox.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                welcomeBox.style.opacity = '1';
+                welcomeBox.style.transform = 'translateY(0)';
+            }, 100);
+        });
+    </script>
+</body>
+</html>

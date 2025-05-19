@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екологічні проблеми планети - Проблеми</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .header, .footer {
+            background-color: #2E8B57;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+        }
+        
+        .header-content, .footer-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .logo:hover {
+            text-decoration: underline;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #3CB371;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn:hover {
+            background-color: #228B22;
+            transform: translateY(-2px);
+        }
+        
+        .main-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            min-height: 70vh;
+        }
+        
+        .page-title {
+            font-size: 36px;
+            color: #2E8B57;
+            margin-bottom: 30px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .problems-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .problem-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .problem-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .problem-content {
+            padding: 20px;
+        }
+        
+        .problem-title {
+            font-size: 22px;
+            color: #2E8B57;
+            margin-bottom: 15px;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+        
+        .problem-desc {
+            margin-bottom: 15px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin: 15px 0;
+        }
+        
+        .problem-img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+        
+        .video-wrapper {
+            width: 100%;
+            position: relative;
+            padding-bottom: 56.25%;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 8px;
+        }
+        
+        .chart-container {
+            width: 100%;
+            height: 200px;
+            margin: 15px 0;
+        }
+        
+        .learn-more {
+            display: block;
+            padding: 8px 15px;
+            background-color: #3CB371;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            text-align: center;
+            margin-top: 15px;
+        }
+        
+        .learn-more:hover {
+            background-color: #228B22;
+        }
+        
+        .footer-text {
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content, .footer-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .page-title {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">ECO-PLANET</a>
+            <div class="nav">
+                <a href="index.html" class="nav-btn">Головна</a>
+                <a href="solutions.html" class="nav-btn">Вирішення</a>
+                <a href="contacts.html" class="nav-btn">Контакти</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <h1 class="page-title">Основні екологічні проблеми</h1>
+        
+        <div class="problems-container">
+            
+            <div class="problem-card">
+                <div class="problem-content">
+                    <h2 class="problem-title">Забруднення повітря</h2>
+                    <p class="problem-desc">Викиди промислових підприємств, транспортних засобів та інших джерел призводять до погіршення якості повітря, що впливає на здоров'я людей та екосистеми.</p>
+                    
+                    <div class="media-container">
+                        <img src="https://himanaliz.ua/wp-content/uploads/2017/09/960.jpg" 
+                             alt="Забруднення повітря" class="problem-img">
+                        
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/e6rglsLy1Ys" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <canvas id="airChart1"></canvas>
+                    </div>
+                    
+                    <a href="https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D0%B1%D1%80%D1%83%D0%B4%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D0%BF%D0%BE%D0%B2%D1%96%D1%82%D1%80%D1%8F" 
+                       class="learn-more" target="_blank">Дізнатися більше</a>
+                </div>
+            </div>
+            
+            
+            <div class="problem-card">
+                <div class="problem-content">
+                    <h2 class="problem-title">Забруднення води</h2>
+                    <p class="problem-desc">Промислові стоки, сільськогосподарські добрива та пластикові відходи забруднюють водойми, що призводить до загибелі водних екосистем та дефіциту питної води.</p>
+                    
+                    <div class="media-container">
+                        <img src="https://ecopolitic.com.ua/wp-content/uploads/2021/05/shutterstock_186121226.jpg" 
+                             alt="Забруднення води" class="problem-img">
+                        
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/Om42Lppkd9w" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <canvas id="waterChart1"></canvas>
+                    </div>
+                    
+                    <a href="https://uk.wikipedia.org/wiki/%D0%97%D0%B0%D0%B1%D1%80%D1%83%D0%B4%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F_%D0%B2%D0%BE%D0%B4%D0%B8" 
+                       class="learn-more" target="_blank">Дізнатися більше</a>
+                </div>
+            </div>
+            
+           
+            <div class="problem-card">
+                <div class="problem-content">
+                    <h2 class="problem-title">Знеліснення</h2>
+                    <p class="problem-desc">Масові вирубки лісів для сільськогосподарських потреб, будівництва та промисловості призводять до втрати біорізноманіття та порушення кліматичного балансу.</p>
+                    
+                    <div class="media-container">
+                        <img src="https://eos.com/wp-content/uploads/2021/07/loss-of-biodiversity.jpg.webp" 
+                             alt="Знеліснення" class="problem-img">
+                        
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/Ic-J6hcSKa8" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <canvas id="forestChart1"></canvas>
+                    </div>
+                    
+                    <a href="https://uk.wikipedia.org/wiki/%D0%97%D0%BD%D0%B5%D0%BB%D1%96%D1%81%D0%BD%D0%B5%D0%BD%D0%BD%D1%8F" 
+                       class="learn-more" target="_blank">Дізнатися більше</a>
+                </div>
+            </div>
+            
+            
+            <div class="problem-card">
+                <div class="problem-content">
+                    <h2 class="problem-title">Зміна клімату</h2>
+                    <p class="problem-desc">Викиди парникових газів призводять до глобального потепління, що викликає екстремальні погодні явища, підвищення рівня моря та інші катастрофічні наслідки.</p>
+                    
+                    <div class="media-container">
+                        <img src="https://postfactum.info/img/publications/4wcG5d4j2PAMR8Bbbj_Mb_gyr4zUhN4x.jpeg" 
+                             alt="Зміна клімату" class="problem-img">
+                        
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/G4H1N_yXBiA" frameborder="0" 
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                    allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    
+                    <div class="chart-container">
+                        <canvas id="climateChart1"></canvas>
+                    </div>
+                    
+                    <a href="https://uk.wikipedia.org/wiki/%D0%93%D0%BB%D0%BE%D0%B1%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5_%D0%BF%D0%BE%D1%82%D0%B5%D0%BF%D0%BB%D1%96%D0%BD%D0%BD%D1%8F" 
+                       class="learn-more" target="_blank">Дізнатися більше</a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Екологічні проблеми планети. </p>
+        </div>
+    </footer>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.problem-card');
+            cards.forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(20px)';
+                
+                setTimeout(() => {
+                    card.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100);
+            });
+            
+            createChart('airChart1', 'Рівень CO2 (млн тонн)', [36, 29, 42, 35, 38], ['2018', '2019', '2020', '2021', '2022']);
+            createChart('waterChart1', 'Забруднені водойми (%)', [15, 18, 22, 25, 28], ['2018', '2019', '2020', '2021', '2022']);
+            createChart('forestChart1', 'Втрата лісів (тис. га)', [12, 15, 18, 20, 22], ['2018', '2019', '2020', '2021', '2022']);
+            createChart('climateChart1', 'Зростання температури (°C)', [0.9, 1.0, 1.1, 1.2, 1.3], ['2018', '2019', '2020', '2021', '2022']);
+            
+            function createChart(id, label, data, labels) {
+                const ctx = document.getElementById(id).getContext('2d');
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: labels,
+                        datasets: [{
+                            label: label,
+                            data: data,
+                            backgroundColor: 'rgba(46, 139, 87, 0.2)',
+                            borderColor: 'rgba(46, 139, 87, 1)',
+                            borderWidth: 2,
+                            tension: 0.3,
+                            fill: true
+                        }]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        scales: {
+                            y: {
+                                beginAtZero: false
+                            }
+                        },
+                        plugins: {
+                            legend: {
+                                display: false
+                            }
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>

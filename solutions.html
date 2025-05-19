@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Екологічні проблеми планети - Вирішення</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        .header, .footer {
+            background-color: #2E8B57;
+            color: white;
+            padding: 20px 0;
+            width: 100%;
+        }
+        
+        .header-content, .footer-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .logo:hover {
+            text-decoration: underline;
+        }
+        
+        .nav {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-btn {
+            padding: 10px 20px;
+            background-color: #3CB371;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-btn:hover {
+            background-color: #228B22;
+            transform: translateY(-2px);
+        }
+        
+        .main-content {
+            width: 90%;
+            max-width: 1200px;
+            margin: 30px auto;
+            min-height: 70vh;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .page-title {
+            font-size: 36px;
+            color: #2E8B57;
+            margin-bottom: 30px;
+            text-align: center;
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .solutions-sidebar {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            align-self: flex-start;
+        }
+        
+        .sidebar-title {
+            font-size: 22px;
+            color: #2E8B57;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .solution-list {
+            list-style-type: none;
+        }
+        
+        .solution-item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .solution-item:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .solution-item h3 {
+            color: #2E8B57;
+            margin-bottom: 8px;
+        }
+        
+        .solution-content {
+            flex: 2;
+            min-width: 300px;
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .solution-title {
+            font-size: 28px;
+            color: #2E8B57;
+            margin-bottom: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .solution-desc {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .solution-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        
+        .footer-text {
+            text-align: center;
+            font-size: 14px;
+        }
+        
+        @media (max-width: 768px) {
+            .header-content, .footer-content {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .page-title {
+                font-size: 28px;
+            }
+            
+            .solutions-sidebar, .solution-content {
+                min-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <a href="index.html" class="logo">ECO-PLANET</a>
+            <div class="nav">
+                <a href="index.html" class="nav-btn">Головна</a>
+                <a href="problems.html" class="nav-btn">Проблеми</a>
+                <a href="contacts.html" class="nav-btn">Контакти</a>
+            </div>
+        </div>
+    </header>
+    
+    <main class="main-content">
+        <h1 class="page-title">Вирішення екологічних проблем</h1>
+        
+        <div class="solutions-sidebar">
+            <h2 class="sidebar-title">Ідеї для вирішення проблем</h2>
+            <ul class="solution-list">
+                <li class="solution-item">
+                    <h3>Забруднення повітря</h3>
+                    <p>Перехід на відновлювані джерела енергії, електромобілі, озеленення міст</p>
+                </li>
+                <li class="solution-item">
+                    <h3>Забруднення води</h3>
+                    <p>Очищення стічних вод, зменшення використання пластику, екологічне землеробство</p>
+                </li>
+                <li class="solution-item">
+                    <h3>Знеліснення</h3>
+                    <p>Відновлення лісів, екологічне лісівництво, використання перероблених матеріалів</p>
+                </li>
+                <li class="solution-item">
+                    <h3>Зміна клімату</h3>
+                    <p>Зменшення викидів CO2, енергоефективність, підтримка екологічних ініціатив</p>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="solution-content">
+            <h2 class="solution-title">Як ми можемо допомогти планеті?</h2>
+            <p class="solution-desc">Кожен з нас може внести свій внесок у вирішення екологічних проблем. Ось кілька способів, які можна легко впровадити у повсякденне життя:</p>
+            
+            <img src="https://images.unsplash.com/photo-1466611653911-95081537e5b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Екологічні рішення" class="solution-img">
+            
+            <p class="solution-desc"><strong>1. Зменшення споживання:</strong> Купуйте лише те, що дійсно потрібно, обирайте товари з мінімальним упакуванням або повторно використовуйте упаковку.</p>
+            
+            <p class="solution-desc"><strong>2. Переробка відходів:</strong> Сортуйте сміття та віддавайте перероблювані матеріали на переробку.</p>
+            
+            <p class="solution-desc"><strong>3. Енергоефективність:</strong> Використовуйте енергозберігаючі прилади, вимикайте світло та електроніку, коли вони не потрібні.</p>
+            
+            <p class="solution-desc"><strong>4. Екологічний транспорт:</strong> Ходіть пішки, їздіть на велосипеді або користуйтесь громадським транспортом замість автомобіля.</p>
+            
+            <p class="solution-desc"><strong>5. Озеленення:</strong> Саджайте дерева та рослини, створюйте городчики на балконах або підвіконнях.</p>
+            
+            <p class="solution-desc"><strong>6. Екологічне харчування:</strong> Зменшуйте споживання м'яса, обирайте місцеві та сезонні продукти.</p>
+            
+            <p class="solution-desc">Пам'ятайте, навіть невеликі зміни у поведінці мільйонів людей можуть призвести до значних позитивних змін для нашої планети!</p>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-text">© 2025 Екологічні проблеми планети.</p>
+        </div>
+    </footer>
+    
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const solutionItems = document.querySelectorAll('.solution-item');
+            
+            solutionItems.forEach(item => {
+                item.addEventListener('mouseover', function() {
+                    this.style.backgroundColor = '#f0fff0';
+                    this.style.padding = '15px';
+                    this.style.borderRadius = '5px';
+                });
+                
+                item.addEventListener('mouseout', function() {
+                    this.style.backgroundColor = 'transparent';
+                    this.style.padding = '0 0 15px 0';
+                    this.style.borderRadius = '0';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
